@@ -3,14 +3,18 @@
 
 }
 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 body,
 html {
+  font-family: "Poppins", sans-serif;
   height: 100%;
   margin: 0;
 }
 
 .logo {
+  cursor: pointer;
+
   width: 120px;
   height: 70px;
 }
@@ -22,17 +26,29 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
+.navbar {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
 .nav {
   padding: 3%;
   overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+  
 }
 
+
 .nav a {
+ 
+  
   font-size: 20px;
+  font-weight: 600;
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -40,36 +56,71 @@ html {
   text-decoration: none;
   font-size: 17px;
 }
-
+.nav img {
+  float: left;
+}
 .nav ul {
-  float: right;
+  
   padding: 0px;
   margin: 0px;
   text-align: center;
-  display: inline-block;
-  vertical-align: top;
+  float: right;
+  
 }
 
+
+.nav a{
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+
+}
 .nav a:hover {
-  color: purple;
+  color: wheat;
+}
+
+.imgtext {
+  font-weight: 700;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
+
+.baslik {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
 }
 
 
-.imgtext{
-    font-weight: bold;
-    text-align: center;
-            font-size: 100px;
-            color: white;
+.anabutton {
+  opacity: 76%;
+
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: #d30808;
+  color: white;
+  border-radius: 12px;
+  font-size: 50px;
+  border-color: transparent;
+
+  cursor: pointer;
 }
 
+.anabutton:hover {
+  opacity: 100%;
 
-.baslik{
-    font-size: 40px;
-    font-weight: bold;;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 /* Scrollbar */
 
@@ -78,25 +129,82 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
+}
+
+.image-left {
+  float: right;
+  padding: 0 0 10px 10px;
+}
+
+.resim {
+  width: 900px;
+  margin: auto;
 }
 
 
-.image-left{
-    float:right;
-    padding:0 0 10px 10px;
+/* Test */ 
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.resim{
+.logo {
+  float: left;
+}
+/* ~~ Top Navigation Bar ~~ */
 
-    width: 900px;
-margin:auto;
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.navigation-bar {
+  background-color: #352d2f;
+  height: 70px;
+  width: 100%;
+  text-align:center;
+}
+.navigation-bar img{
+float:left;
+}
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: black;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+#menu {
+  float: right;
 }

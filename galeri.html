@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<div style="margin-top: 20px;" class="navbar">
+    <div class="nav" style="background-color: #24252a ; padding: 0% !important;">
+        <a href="index.html"> <img class="logo" src="images/logo.png" /></a>
+        <ul>
+            <a href="#home">Ana Sayfa</a>
+            <a href="#home">Galeri</a>
+            <a href="#news">Blog</a>
+            <a href="#contact">Ekip</a>
+            <a href="#about">İletişim</a>
+        </ul>
+    </div>
+
+</div>
+
+<body >
+    <div class="center">
+        <h1>Galeri</h1>
+    </div>
+    <div id="test" class="gallery">
+
+
+
+    </div>
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .gallery {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+
+
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+
+        .gallery img {
+
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+        }
+
+        .gallery img.full {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100vw;
+            height: 100vh;
+            object-fit: fit;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery img.full:hover {
+            z-index: 999;
+            transform: none;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+            let adem = document.getElementById("#test")
+            const galeri = ["galeri1", "galeri2", "galeri3", "galeri4"];
+            for (let i = 0; i < galeri.length; i++) {
+                console.log(galeri[i] + ".jpg")
+                test.innerHtml =  `<img src="./images/${galeri[i]}.jpg">`
+
+            }
+
+
+    </script>
+</body>
+
+</html>
