@@ -47,7 +47,7 @@ html {
 .nav a {
  
   
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   float: left;
   color: #f2f2f2;
@@ -71,7 +71,7 @@ html {
 
 .nav a{
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   line-height: 70px;
@@ -208,3 +208,23 @@ float:left;
 #menu {
   float: right;
 }
+
+.hakkinda
+{
+  margin: 50px;
+}
+.mod-section-ad {
+  width: 100%;
+  height: 482px;
+  /* background-size: cover; */
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover !important;
+}
+.mod-section-ad {
+  background: url(../../images/hakkindafoto.png) no-repeat center bottom;
+  background-size: cover;
+  object-fit: cover !important;
+  background-size: cover;
+}
+  
