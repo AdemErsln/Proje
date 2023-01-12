@@ -17,27 +17,34 @@
     <div class="bg">
         <div class="navbar">
             <div class="nav">
-                <a href="index.html"> <img  class="logo" src="images/logo.png" /></a>
+                <a href="index.html"> <img class="logo" src="images/logo.png" /></a>
                 <ul>
-                    <a href="#home">Ana Sayfa</a>
-                    <a href="#home">Galeri</a>
-                    <a href="#news">Blog</a>
-                    <a href="#contact">Ekip</a>
-                    <a href="#about">İletişim</a>
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="galeri.html">Galeri</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="ekip.html">Ekip</a>
+                    <a href="iletisim.html">İletişim</a>
                 </ul>
             </div>
         </div>
         <div class="imgtext">
             <p id="baslik"></p>
-            <button class="anabutton">Bir Tur At</button>
+            <button onclick="transitionToPage('./hakkında.html')" class="anabutton">Bir Tur At</button>
         </div>
 
 
     </div>
 
-
+    <script>
+       
+    </script>
 </body>
-
+<style>
+    body {
+        opacity: 0;
+        transition: opacity .5s;
+    }
+</style>
 <div id="footer">
 
 

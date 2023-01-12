@@ -1,93 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style></style>
+<style></style>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <div style="margin-top: 20px" class="navbar">
-    <div
-      class="navigation-bar"
-      style="background-color: #3766be; margin-top: 0; padding: 0% !important"
-    >
-      <a href="index.html"> <img class="logo" src="images/logo.png" /></a>
-      <ul>
-        <li><a href="#home">Ana Sayfa</a></li>
-        <li><a href="#home">Galeri</a></li>
-        <li><a href="#news">Blog</a></li>
-        <li><a href="#contact">Ekip</a></li>
-        <li><a href="#about">İletişim</a></li>
-      </ul>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span onclick="tamekran_kapat()" class="close">&times;</span>
+    <img id="tamekran_img" src="">;
   </div>
 
-  <body>
-    <div class="center">
-      <h1 style="margin-top: 20px">Galeri</h1>
-    </div>
-    <div id="test" class="gallery"></div>
-    <style>
-      h1 {
-        font-family: poppins;
-        font-size: 50px;
+</div>
+<div class="nav" style="background-color: #24252a ; padding: 0% !important;">
+  <a href="index.html"> <img class="logo" src="images/logo.png" /></a>
+  <ul>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="blog.html">Blog</a>
+    <a href="ekip.html">Ekip</a>
+    <a href="iletisim.html">İletişim</a>
+  </ul>
+</div>
+
+<body>
+  <div class="center">
+    <h1 style="margin-top: 20px">Galeri</h1>
+  </div>
+  <div id="test" class="gallery"></div>
+
+  <style>
+    h1 {
+      font-family: poppins;
+      font-size: 50px;
+    }
+
+    .center {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+
+      max-width: 1272px !important;
+
+      /* alternatif */
+      max-width: 100%;
+      /* alternatif */
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .gallery img {
+      border-radius: 30px;
+
+      width: 100%;
+      height: 300px;
+      padding: 10px;
+    }
+
+    .gallery img.full {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 100vw;
+      height: 100vh;
+      object-fit: fit;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .gallery img.full:hover {
+      z-index: 999;
+      transform: none;
+    }
+
+    .gallery img:hover {
+      border-radius: 20px;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+
+    const galeri = ["galeri", "galeri2", "galeri3", "galeri4", "galeri5", "galeri6", "galeri7", "galeri8", "galeri9"];
+    for (let i = 0; i < galeri.length; i++) {
+      var elem = document.createElement("img");
+      elem.setAttribute("src", `./images/${galeri[i]}.jpg`);
+      elem.setAttribute("alt", "Flower");
+      elem.setAttribute("onclick", "tamekran(this.src)");
+      document.getElementById("test").appendChild(elem);
+
+    }
+
+
+    var modal = document.getElementById("myModal");
+
+    // Get the modal
+    function tamekran(src) {
+      modal.style.display = "block";
+      document.getElementById("tamekran_img").src = src;
+    }
+
+    function tamekran_kapat() {
+      var x = document.querySelector("#myModal > div > span");
+
+      modal.style.display = "none";
+
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
       }
+    }
 
-      .center {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
-      }
 
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
+  </script>
 
-        max-width: 1000px;
-        margin: 0 auto;
-        overflow: hidden;
-      }
+  <style>
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: hidden;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
 
-      .gallery img {
+    .modal-content img {
+      height: 536px;
+      width: 100%;
+
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%;
+      width: 50%;
+      border: 1px solid #888;
+      border-radius: 10px;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+      margin-right: 20px;
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+
+
+</body>
+<footer style="  
+        display: flex;
+        justify-content: center;
+        color: white;
+       background-color: #1e2432;
         width: 100%;
-        height: 300px;
-        padding: 10px;
-      }
-
-      .gallery img.full {
-        position: fixed;
-        top: 0;
+        height: 10vh;
         left: 0;
-        z-index: 999;
-        width: 100vw;
-        height: 100vh;
-        object-fit: fit;
-        background: rgba(0, 0, 0, 0.7);
-      }
+        bottom: 0;">
+  <p class="text-center">Tüm Hakları Sakldır &copy; Proje ekibi</p>
+</footer>
 
-      .gallery img.full:hover {
-        z-index: 999;
-        transform: none;
-      }
-
-      .gallery img:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-      }
-    </style>
-
-    <script>
-      let adem = document.getElementById("#test");
-      const galeri = ["galeri1", "galeri2", "galeri3", "galeri4"];
-      for (let i = 0; i < galeri.length; i++) {
-        console.log(galeri[i] + ".jpg");
-        test.innerHtml = `<img src="./images/${galeri[i]}.jpg">`;
-      }
-    </script>
-  </body>
 </html>

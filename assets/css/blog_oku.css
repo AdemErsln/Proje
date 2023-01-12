@@ -1,0 +1,396 @@
+/** {
+  background-color: gray;
+
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+    * {
+      box-sizing: border-box;
+      font-weight: 300;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+ 
+    body {
+      font-family: Arial;
+      /*padding: 20px;*/
+      background: #fff;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+   
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+    }
+
+  
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+   
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+   
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .card a:hover {}
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+@media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+.logo {
+  cursor: pointer;
+
+  width: 120px;
+  height: 70px;
+}
+
+.bg {
+  background-image: url("../../images/paris.gif");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+.nav {
+  padding: 3%;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.nav a {
+  font-size: 15px;
+  font-weight: 600;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav img {
+  float: left;
+}
+.nav ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  float: right;
+}
+
+.nav a {
+  color: white;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+}
+.nav a:hover {
+  color: wheat;
+}
+
+.imgtext {
+  font-weight: 700;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
+
+.baslik {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+
+.anabutton {
+  opacity: 76%;
+
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: #d30808;
+  color: white;
+  border-radius: 12px;
+  font-size: 50px;
+  border-color: transparent;
+
+  cursor: pointer;
+}
+
+.anabutton:hover {
+  opacity: 100%;
+
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+/* Scrollbar */
+
+.image-left {
+  float: right;
+  padding: 0 0 10px 10px;
+}
+
+.resim {
+  width: 900px;
+  margin: auto;
+}
+
+/* Test */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  float: left;
+}
+/* ~~ Top Navigation Bar ~~ */
+
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.navigation-bar {
+  background-color: #352d2f;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+}
+.navigation-bar img {
+  float: left;
+}
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: black;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+#menu {
+  float: right;
+}
+
+.hakkinda {
+  margin: 50px;
+  font-family: "Josefin Sans", sans-serif;
+
+}
+
+.hakkinda h1 {
+  font-weight: 500;
+  color: black;
+  font-size: 38px;
+  font-style: normal;
+}
+.hakkinda p {
+  margin-top: 0;
+    margin-bottom: 1rem;
+  color: #6c757d;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+}
+.mod-section-ad {
+  width: 100%;
+  height: 482px;
+  /* background-size: cover; */
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover !important;
+}
+.mod-section-ad {
+  background: url(../../images/hakkindafoto.png) no-repeat center bottom;
+  background-size: cover;
+  object-fit: cover !important;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .kutu1 {
+  width: 330px;
+  height: 416px;
+  padding: 60px 30px;
+  margin: 20px;
+  background: #f2f3f7;
+  box-shadow: 0.6em 0.6em 1.2em #637a97, -0.5em -0.5em 1em #ffffff;
+  border-radius: 20px;
+}
+
+.container .kutu1 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .kutu1 .content .resim {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.container .kutu1 .content .resim img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .kutu1 .content .content1 h4 {
+  color: #36187d;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container .kutu1 .content .content1 h5 {
+  color: #6c758f;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .kutu1 .content .icon {
+  margin-top: 20px;
+}
+
+.container .kutu1 .content .icon a {
+  text-decoration: none;
+  color: #6c758f;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.container .kutu1 .content .icon a:hover {
+  color: #090a0a;
+}
+
+.kutu1:hover {
+  transform: 0.4s;
+  background-color: antiquewhite;
+  opacity: 0.8;
+}
+
+.üstmenü1 {
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 410px;
+}
+
+.text-center {
+  text-align: center;
+  padding: 25px;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #24252a;
+  width: 100%;
+  
+  left: 0;
+  bottom: 0;
+}

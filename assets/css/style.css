@@ -5,6 +5,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 body,
 html {
   font-family: "Poppins", sans-serif;
@@ -40,13 +41,9 @@ html {
   width: 100%;
   margin: 0 auto;
   height: 70px;
-  
 }
 
-
 .nav a {
- 
-  
   font-size: 15px;
   font-weight: 600;
   float: left;
@@ -60,23 +57,19 @@ html {
   float: left;
 }
 .nav ul {
-  
   padding: 0px;
   margin: 0px;
   text-align: center;
   float: right;
-  
 }
 
-
-.nav a{
+.nav a {
   color: white;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   line-height: 70px;
   padding: 5px 15px;
-
 }
 .nav a:hover {
   color: wheat;
@@ -98,7 +91,6 @@ html {
   margin-right: auto;
   width: 8em;
 }
-
 
 .anabutton {
   opacity: 76%;
@@ -124,22 +116,6 @@ html {
 }
 /* Scrollbar */
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 .image-left {
   float: right;
   padding: 0 0 10px 10px;
@@ -150,8 +126,7 @@ html {
   margin: auto;
 }
 
-
-/* Test */ 
+/* Test */
 
 body {
   margin: 0;
@@ -173,17 +148,17 @@ body {
   background-color: #352d2f;
   height: 70px;
   width: 100%;
-  text-align:center;
+  text-align: center;
 }
-.navigation-bar img{
-float:left;
+.navigation-bar img {
+  float: left;
 }
 .navigation-bar ul {
   padding: 0px;
   margin: 0px;
   text-align: center;
-  display:inline-block;
-  vertical-align:top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .navigation-bar li {
@@ -209,9 +184,25 @@ float:left;
   float: right;
 }
 
-.hakkinda
-{
+.hakkinda {
   margin: 50px;
+  font-family: "Josefin Sans", sans-serif;
+
+}
+
+.hakkinda h1 {
+  font-weight: 500;
+  color: black;
+  font-size: 38px;
+  font-style: normal;
+}
+.hakkinda p {
+  margin-top: 0;
+    margin-bottom: 1rem;
+  color: #6c757d;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
 }
 .mod-section-ad {
   width: 100%;
@@ -227,4 +218,109 @@ float:left;
   object-fit: cover !important;
   background-size: cover;
 }
-  
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .kutu1 {
+  width: 330px;
+  height: 416px;
+  padding: 60px 30px;
+  margin: 20px;
+  background: #f2f3f7;
+  box-shadow: 0.6em 0.6em 1.2em #637a97, -0.5em -0.5em 1em #ffffff;
+  border-radius: 20px;
+}
+
+.container .kutu1 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .kutu1 .content .resim {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.container .kutu1 .content .resim img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .kutu1 .content .content1 h4 {
+  color: #36187d;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container .kutu1 .content .content1 h5 {
+  color: #6c758f;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .kutu1 .content .icon {
+  margin-top: 20px;
+}
+
+.container .kutu1 .content .icon a {
+  text-decoration: none;
+  color: #6c758f;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.container .kutu1 .content .icon a:hover {
+  color: #090a0a;
+}
+
+.kutu1:hover {
+  transform: 0.4s;
+  background-color: antiquewhite;
+  opacity: 0.8;
+}
+
+.üstmenü1 {
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 410px;
+}
+
+.text-center {
+  text-align: center;
+  padding: 25px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #24252a;
+  width: 100%;
+  height: 10vh;
+  left: 0;
+  bottom: 0;
+}

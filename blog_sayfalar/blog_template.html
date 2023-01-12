@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/blog_oku.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+    * {
+      box-sizing: border-box;
+      font-weight: 300;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    /* Add a gray background color with some padding */
+    body {
+      font-family: Arial;
+      /*padding: 20px;*/
+      background: #fff;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .card a:hover {}
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--<div class="header">
+    <h2>Blog Name</h2>
+  </div>-->
+  <section>
+    <div class="nav" style="background-color: #24252a ; padding: 0% !important;">
+      <a href="index.html"> <img class="logo" src="../images/logo.png" /></a>
+      <ul>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="blog.html">Blog</a>
+        <a href="ekip.html">Ekip</a>
+        <a href="iletisim.html">İletişim</a>
+      </ul>
+    </div>
+  </section>
+
+
+  <div class=" row">
+    <div class="leftcolumn">
+      <div class="card">
+        <center>
+          <h2>Başlık</h2>
+        </center>
+        <center> <img src="../images/galeri3.jpg" alt="Image placeholder" class="img-fluid">
+        </center>
+        <br>
+        <div style="text-align: left;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima eveniet recusandae suscipit eum
+            laboriosam fugit amet deleniti iste et. Ad dolores, necessitatibus non saepe tenetur impedit commodi
+            quibusdam
+            natus repellat, exercitationem accusantium perferendis officiis. Laboriosam impedit quia minus pariatur!</p>
+          <p>Dignissimos iste consectetur, nemo magnam nulla suscipit eius quibusdam, quo aperiam quia quae est
+            explicabo
+            nostrum ab aliquid vitae obcaecati tenetur beatae animi fugiat officia id ipsam sint? Obcaecati ea nisi
+            fugit
+            assumenda error totam molestiae saepe fugiat officiis quam?</p>
+          <p>Culpa porro quod doloribus dolore sint. Distinctio facilis ullam voluptas nemo voluptatum saepe repudiandae
+            adipisci officiis, explicabo eaque itaque sed necessitatibus, fuga, ea eius et aliquam dignissimos
+            repellendus
+            impedit pariatur voluptates. Dicta perferendis assumenda, nihil placeat, illum quibusdam. Vel, incidunt?</p>
+          <p>Dolorum blanditiis illum quo quaerat, possimus praesentium perferendis! Quod autem optio nobis, placeat
+            officiis dolorem praesentium odit. Vel, cum, a. Adipisci eligendi eaque laudantium dicta tenetur quod,
+            pariatur sunt sed natus officia fuga accusamus reprehenderit ratione, provident possimus ut voluptatum.</p>
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h1 style="text-align: center;">Yazar</h1>
+
+        <center><img style="text-align: center ;" width="150px" src="../images/user.png">
+        </center>
+        <br>
+        <p style="font-size: 30px; text-align: center;">Adem Eraslan</p>
+        <p style="text-align: center; padding: 10px;">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like readable English.
+        </p>
+        <img src="../images/youtube.png" width="30px" height="30px" style="margin-left: 90px;">
+        <img src="../images/instagram.png" width="30px" height="30px" style="margin-left: 2px;">
+
+      </div>
+      <div class="card">
+        <h2>Beğenebileceğiniz Diğer Bloglar</h1>
+          <hr>
+          <a href="#"><img src="../images/galeri3.jpg" width="100px" height="65px" style="float: left;"></a>
+          <a style="text-decoration: none;" href="#">
+            <p style="margin-left: 120px">It is a long established fact that a reader will</p>
+          </a>  
+        </div>
+      <div class="card">
+        <hr>
+        <a href="#"><img src="../images/galeri3.jpg" width="100px" height="65px" style="float: left;"></a>
+        <a style="text-decoration: none;" href="#">
+          <p style="margin-left: 120px">It is a long established fact that a reader will</p>
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <footer>
+      <p class="text-center">Tüm Hakları Sakldır &copy; Proje ekibi</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
