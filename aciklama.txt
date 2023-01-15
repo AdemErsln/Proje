@@ -1,0 +1,20 @@
+Projemizin konusu ülke tanıtımıdır
+
+Seçtiğimiz ülke Fransadır
+
+Projemizi yaparken sayfaları kişilere bölerek yaptık
+
+Bölüm şekli şöyledir
+Ana-Sayfa - Galeri: Adem Eraslan
+Blog Listesi sayfası : Sura Fındık
+Blog okuma sayfası tasarımı : Mehmet Fatih Koçer
+Ekip:Ömer Faruk Karadeniz
+İletişim:Emre Ekdiren
+
+
+Blog içi yazıları yine bölüşerek yaptık zaten girdiğinizde sağ tarafta yazarı görüceksiniz
+
+
+
+
+
